@@ -1,5 +1,4 @@
-"use client";
-
+'use client';
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
@@ -8,17 +7,20 @@ import { StudentLayout } from "@/app/components/StudentLayout";
 
 export default function PostView() {
   const searchParams = useSearchParams();
-  const postId = searchParams?.get("postid");  // safe access
+  const [postId, setPostId] = useState(null); // move postId to state
 
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!postId) return;
+    const id = searchParams.get("postid");
+    if (!id) return;
+
+    setPostId(id);
 
     const fetchPost = async () => {
       try {
-        const { data } = await axios.get(`/api/posts/${postId}`);
+        const { data } = await axios.get(`/api/posts/${id}`);
         if (data.success) {
           setPost(data.post);
         }
@@ -30,7 +32,7 @@ export default function PostView() {
     };
 
     fetchPost();
-  }, [postId]);
+  }, [searchParams]);
 
   return (
     <StudentLayout>
@@ -51,7 +53,6 @@ export default function PostView() {
               <p className="text-muted mb-4">
                 <strong>Skill:</strong> {post.skill}
               </p>
-
               <div
                 className="post-answer"
                 dangerouslySetInnerHTML={{ __html: post.answer }}
