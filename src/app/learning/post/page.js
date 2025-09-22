@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useEffect, useState,Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
 import { Spinner, Card } from "react-bootstrap";
@@ -35,6 +35,7 @@ export default function PostView() {
   }, [searchParams]);
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <StudentLayout>
       <div className="container py-4">
         {loading ? (
@@ -62,5 +63,6 @@ export default function PostView() {
         )}
       </div>
     </StudentLayout>
+    </Suspense>
   );
 }
