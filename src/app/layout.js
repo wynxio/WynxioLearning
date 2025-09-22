@@ -1,10 +1,13 @@
+
+import { Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
-
+ 
 import "./globals.css";
+
 let title ="Wynxio Learning";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +60,8 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Suspense fallback={<div>Loading...</div>}>
+        <div>
         {children}
         <ToastContainer
           position="top-right"
@@ -70,7 +75,8 @@ export default function RootLayout({ children }) {
           pauseOnHover
           theme="colored"
         />
-        
+        </div>
+        </Suspense>
       </body>
     </html>
   );
