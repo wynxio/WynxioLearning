@@ -1,0 +1,199 @@
+ body {
+   background-color: linear-gradient(to right, #e9e9f2, #ebf1eb)
+ }
+
+ .bgHeaderNav {
+   background: #30c28f;
+ }
+
+ .imgPreviewAdmin {
+   width: auto;
+   height: auto;
+   max-width: 200px;
+   max-height: 200px;
+ }
+
+ .width80 {
+   width: 80%;
+ }
+
+ .nav-item {
+   border: 1px solid black !important;
+   border-radius: 20px;
+   margin-right: 10px;
+   margin-bottom: 5px;
+   margin-top: 2px;
+   padding: 0px 10px;
+   text-align: center;
+   cursor: pointer;
+ }
+
+ .singleItem {
+   border: 1px solid black !important;
+   border-radius: 20px;
+   margin-right: 10px;
+   margin-bottom: 20px;
+   padding: 20px;
+   margin-top: 2px;
+   text-align: left;
+   cursor: pointer;
+ }
+
+ .previewContainer {
+
+   width: 200px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .previewBox {
+   display: flex;
+   justify-content: start;
+   align-items: start;
+ }
+
+ .previewItem {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border: 1px solid #ccc;
+   margin-right: 10px;
+   border-radius: 5px;
+   gap: 20px;
+ }
+
+ .thumbnailpreview {
+   width: auto;
+   height: auto;
+   max-width: 200px;
+   max-height: 200px;
+   object-fit: cover;
+ }
+
+ .centerFlex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .btnContactMe {
+   display: inline-block;
+   padding: 10px 22px;
+   border: none;
+   border-radius: 50px;
+   /* pill shape */
+   font-size: 16px;
+   font-weight: 600;
+   color: #fff;
+   background: linear-gradient(135deg, #ff6b6b, #ff4757);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease;
+   cursor: pointer;
+ }
+
+ .btnContactMe:hover {
+   transform: scale(1.05);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ }
+
+ .btnContactMe:active {
+   transform: scale(0.97);
+ }
+
+ .btnContactMe:focus {
+   outline: none;
+   box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.3);
+ }
+
+ .commentbutton {
+   padding: 0px 17px 10px 17px;
+   text-align: right;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .alinkcomment {
+   color: #2a7eba;
+   font-size: 12px;
+   cursor: pointer;
+   text-decoration: none;
+ }
+
+ .ProseMirror {
+   min-height: 200px;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   font-size: 16px;
+   line-height: 1.6;
+ }
+
+ .ProseMirror img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ .ProseMirror iframe {
+   max-width: 100%;
+   aspect-ratio: 16/9;
+ }
+
+ .maxwidth200 {
+   max-width: 200px;
+ }
+
+ .width50 {
+   width: 50%;
+ }
+
+ .studentsMainContainer {
+   background-color: #d3d3ca;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   ALIGN-ITEMS: center;
+ }
+
+ .students-login-container {
+
+   background-color: #dfebf6;
+   /* light blue */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .loginedStudentName {
+   color: yellow;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1rem;
+   margin-right: 10px;
+ }
+
+ .post-answer>img {
+   max-width: 100%;
+ }
+
+ .classProgressAccordion {
+   margin-top: 20px;
+   border: 1px solid #b24e4e !important;
+   border-radius: 3px;
+ }
+ .studentlinksShortcut{
+  background-color: aliceblue;
+  padding: 10px 20px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center
+ }
+ .studentlinksShortcut > a{
+  color:#00a7ff !important;
+  cursor: pointer;
+ }
