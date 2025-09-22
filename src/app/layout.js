@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Script from "next/script";
 
 import "./globals.css";
 let title ="Wynxio Learning";
@@ -26,7 +27,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> */}
+        <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+          strategy="afterInteractive"
+        />
         <title>{title}</title>
 
         {/* <meta name="description" content="Trending IT Training Solution" />
@@ -65,6 +70,7 @@ export default function RootLayout({ children }) {
           pauseOnHover
           theme="colored"
         />
+        
       </body>
     </html>
   );
