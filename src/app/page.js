@@ -1,7 +1,7 @@
 'use client';
 
  
-import '../app/Styles/intro.css';
+import '../app/Styles/Intro.css';
  
 import { PublicLayout } from "./components/PublicLayout";
 import { StudentLogin } from './components/StudentLogin';

@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import "../../Styles/DashBoard.css";
+import "../../Styles/Dashboard.css";
 import { AdminLayout } from "@/app/components/AdminLayout";
 
 export default function Dashboard() {
