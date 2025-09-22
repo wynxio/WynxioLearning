@@ -1,10 +1,10 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect,Suspense } from 'react';
 import useAppStore from '../store/useStore';
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { StudentNavBar } from './StudentNavBar';
 import { encryptRedirectUrl } from '../lib/skillslist';
-
+ 
 export const StudentLayout = ({ children }) => {
   const router = useRouter();
   const pathname = usePathname();
@@ -28,9 +28,11 @@ export const StudentLayout = ({ children }) => {
   }
 
   return (
+     <Suspense fallback={<div>Loading...</div>}>
     <div>
       <StudentNavBar />
       {children}
     </div>
+    </Suspense>
   );
 };
