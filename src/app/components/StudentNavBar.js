@@ -22,8 +22,11 @@ export const StudentNavBar = () => {
       <nav className="navbar navbar-expand-lg bgHeaderNav">
         <div className="container-fluid">
           {/* Brand */}
-          <a className="navbar-brand text-white" href="#">
-            WYNXIO Students Learning Panel
+          <a className="navbar-brand text-white" >
+            <div className="studentslogocontainer"><img src="/logo/logoblack.png" className="studentslogo"></img>
+              {/* Students Learning Portal */}
+              <span>Students Learning Portal</span>
+            </div>
           </a>
 
           {/* Toggler for mobile */}

@@ -186,23 +186,48 @@
    border: 1px solid #b24e4e !important;
    border-radius: 3px;
  }
- .studentlinksShortcut{
-  background-color: aliceblue;
-  padding: 10px 20px;
-  display:flex;
-  justify-content: space-around;
-  align-items: center
+
+ .studentlinksShortcut {
+   background-color: aliceblue;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center
  }
- .studentlinksShortcut > a{
-  color:#00a7ff !important;
-  cursor: pointer;
+
+ .studentlinksShortcut>a {
+   color: #00a7ff !important;
+   cursor: pointer;
  }
- .learningHomeContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+ .learningHomeContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
- .learninginterviewSection{
-  min-width: 80%;
-  padding:4rem 1rem;
+
+ .learninginterviewSection {
+   min-width: 80%;
+   padding: 4rem 1rem;
+ }
+
+ .studentslogocontainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: .8rem;
+   text-transform: uppercase;
+ }
+
+ .studentslogo {
+   width: auto;
+   height: auto;
+   max-height: 50px;
+ }
+ .studentslogologin{
+  width: auto;
+   height: auto;
+   max-width: 100%;
+   margin-bottom: 20px;
  }

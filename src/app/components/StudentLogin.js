@@ -72,8 +72,9 @@ export const StudentLogin = () => {
   return (
     <div className="students-login-container">
       <div className="login-box">
+        <div className="centerFlex"><img src="/logo/logoblack.png" className="studentslogologin"></img></div>
         <h1 className="login-title">Student Login</h1>
-        <h2 className="login-Subtitle">Login</h2>
+         
         <form style={{ width: "300px" }} onSubmit={submitLogin}>
           <div className="mb-3">
             <label className="form-label">Username</label>
