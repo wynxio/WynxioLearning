@@ -36,7 +36,9 @@ export default function ManageFiles() {
         toast.error(res.data.error || "Upload failed");
       }
     } catch (err) {
-      console.error(err);
+      console.clear();
+      console.error('err',err);
+      
       toast.error("Error uploading file");
     } finally {
       setLoading(false);

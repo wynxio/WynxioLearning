@@ -82,7 +82,7 @@ export const NavBar = () => {
               </li>
               
 
-               <li className="nav-item">
+               {/* <li className="nav-item">
                 <a
                   className="nav-link text-white"
                   
@@ -93,7 +93,7 @@ export const NavBar = () => {
                 >
                   Upload Files
                 </a>
-              </li>
+              </li> */}
 
                <li className="nav-item">
                 <a
@@ -101,10 +101,10 @@ export const NavBar = () => {
                   
                   onClick={(e) => {
                     e.preventDefault();
-                    router.push("/manageaccountadmin/filehistory");
+                    router.push("/manageaccountadmin/uploadedfiles");
                   }}
                 >
-                  File History
+                  Uploaded Files
                 </a>
               </li>
                <li className="nav-item">

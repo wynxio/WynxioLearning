@@ -42,7 +42,7 @@ export default function Dashboard() {
             </button>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <h4>File Upload</h4>
             <button
               onClick={(e) => {
@@ -52,16 +52,16 @@ export default function Dashboard() {
             >
               File Upload
             </button>
-          </div>
+          </div> */}
           <div className="card">
-            <h4>File History</h4>
+            <h4>Uploaded Files</h4>
             <button
               onClick={(e) => {
                 e.preventDefault();
-                router.push("/manageaccountadmin/filehistory");
+                router.push("/manageaccountadmin/uploadedfiles");
               }}
             >
-              File History
+              Uploaded Files
             </button>
           </div>
           <div className="card">

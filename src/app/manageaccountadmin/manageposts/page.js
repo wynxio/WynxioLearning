@@ -29,9 +29,10 @@ export default function ManagePosts() {
       setIsEditMode(true);
       setLoading(true);
       axios
-        .get(`/api/posts?id=${id}`)
+        .get(`/api/posts/${id}`)
         .then((res) => {
-          const post = res.data.posts?.[0];
+          const post = res?.data?.post;
+         
           if (post) {
             setSkill(post.skill || "html");
             setSection(post.section || "");
@@ -104,6 +105,7 @@ export default function ManagePosts() {
   return (
     <AdminLayout>
       <div className="container mt-4">
+        <h1>id:{id}</h1>
         <h3 className="mb-4">
           {isEditMode ? "Edit Post" : "Create a New Post"}
         </h3>

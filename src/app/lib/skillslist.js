@@ -1,13 +1,14 @@
 let  SkillsList=[
-    {id:1,name:"HTML"},
-    {id:2,name:"CSS"},
-    {id:3,name:"JavaScript"},
-    {id:4,name:"React"},
-    {id:5,name:"Redux"},
-    {id:6,name:"Zustand"},
-    {id:7,name:"NodeJS"},
-    {id:8,name:"ExpressJS"},
-    {id:9,name:"MongoDB"},
+    {id:1,name:"General"},
+    {id:2,name:"HTML"},
+    {id:3,name:"CSS"},
+    {id:4,name:"JavaScript"},
+    {id:5,name:"React"},
+    {id:6,name:"Redux"},
+    {id:7,name:"Zustand"},
+    {id:8,name:"NodeJS"},
+    {id:9,name:"ExpressJS"},
+    {id:10,name:"MongoDB"},
 ]
 
 export default SkillsList;
