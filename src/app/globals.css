@@ -197,3 +197,12 @@
   color:#00a7ff !important;
   cursor: pointer;
  }
+ .learningHomeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .learninginterviewSection{
+  min-width: 80%;
+  padding:4rem 1rem;
+ }
