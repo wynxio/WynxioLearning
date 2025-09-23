@@ -4,6 +4,7 @@
 
  .bgHeaderNav {
    background: #30c28f;
+   padding:0px 20px;
  }
 
  .imgPreviewAdmin {
@@ -223,7 +224,7 @@
  .studentslogo {
    width: auto;
    height: auto;
-   max-height: 50px;
+   max-height: 70px;
  }
  .studentslogologin{
   width: auto;
