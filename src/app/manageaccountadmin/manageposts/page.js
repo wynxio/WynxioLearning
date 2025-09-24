@@ -105,7 +105,7 @@ export default function ManagePosts() {
   return (
     <AdminLayout>
       <div className="container mt-4">
-        <h1>id:{id}</h1>
+        
         <h3 className="mb-4">
           {isEditMode ? "Edit Post" : "Create a New Post"}
         </h3>
