@@ -40,7 +40,7 @@ export async function GET(req) {
     const total = await postCollection.countDocuments(query);
     const posts = await postCollection
       .find(query)
-      .sort({ createdTime: -1 })
+      //.sort({ createdTime: -1 })
       .skip(skip)
       .limit(limit)
       .toArray();
