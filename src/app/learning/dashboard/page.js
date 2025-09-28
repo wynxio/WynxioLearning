@@ -16,7 +16,7 @@ export default function Dashboard() {
               <div className="card shadow-sm h-100">
                 <div className="card-body d-flex flex-column justify-content-between">
                   <div>
-                    <h5 className="card-title">Interview Training</h5>
+                    <h5 className="card-title">Interview Training & Notes</h5>
                     <p className="card-text mt-5">
                       Practice with skill-wise interview questions and answers to boost
                       your confidence before real interviews.

@@ -14,7 +14,7 @@ import FilePreviewModal from "@/app/components/FilePreviewModal";
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const [page] = useState(1); // not needed for students, just 1 page
-  const [limit] = useState(20); // fetch enough results
+  const [limit] = useState(1000); // fetch enough results
   const [skill, setSkill] = useState("");
   const [search, setSearch] = useState("");
 
@@ -55,7 +55,7 @@ export default function Home() {
       <StudentLayout>
         <div className="learningHomeContainer">
           <div className="learninginterviewSection">
-            <h2 className="mb-4">Interview Questions</h2>
+            <h2 className="mb-4">Interview Training and Notes</h2>
 
             {/* Filters */}
             <div className="d-flex mb-4 gap-3 flex-wrap">
