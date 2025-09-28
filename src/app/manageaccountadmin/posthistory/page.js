@@ -12,7 +12,7 @@ import PostAdditionalFiles from "@/app/components/PostAdditionalFiles"; // new c
 export default function PostHistory() {
   const [posts, setPosts] = useState([]);
   const [page, setPage] = useState(1);
-  const [limit] = useState(5);
+  const [limit] = useState(30);
   const [totalPages, setTotalPages] = useState(1);
 
   // filters
