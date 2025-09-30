@@ -45,6 +45,21 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
+             <div className="col-md-6">
+              <div className="card shadow-sm h-100">
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 className="card-title">HTML Class Recordings</h5>
+                    <p className="card-text mt-5">
+                      HTML Class Recordings
+                    </p>
+                  </div>
+                  <Link href="/learning/htmlclasses" className="btn btn-success mt-5">
+                    View Recordings
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </StudentLayout>
